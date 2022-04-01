@@ -22,7 +22,7 @@ class UserInfo{
 		else if(getenv('REMOTE_ADDR'))
 			$mainIp = getenv('REMOTE_ADDR');
 		else
-			$mainIp = 'UNKNOWN';
+			$mainIp = '127.0.0.1';
 		return $mainIp;
 	}
 
@@ -76,6 +76,7 @@ class UserInfo{
 			'/firefox/i'    =>  'Firefox',
 			'/safari/i'     =>  'Safari',
 			'/chrome/i'     =>  'Chrome',
+			'/chrome/i'     =>  'brave',
 			'/edge/i'       =>  'Edge',
 			'/opera/i'      =>  'Opera',
 			'/netscape/i'   =>  'Netscape',
@@ -152,5 +153,8 @@ class UserInfo{
 			return 'Computer';
 		}   
 	}
-
+ 
+   
 }
+
+?>
